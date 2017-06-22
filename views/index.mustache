@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>index</title>
+</head>
+
+<body>
+  {{#users}}
+    Hello {{users}}
+  {{/users}}
+  {{^users}}
+  <h3>UserName</h3>
+  <form class="userId" action="/login" method="post">
+    <input type="textbox" name="username" placeholder="Enter Username">
+    <h3>Password</h3>
+    <input type="textbox" name="password" placeholder="Enter Password">
+    <button>submit</button>
+    {{/users}}
+  </form>
+
+</body>
+
+</html>
